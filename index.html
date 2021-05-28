@@ -1,0 +1,87 @@
+<html>
+    <head>
+        
+        <title>
+            Qrcode
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                text-align:center;
+                background-image: url('tree.jpg');
+                background-repeat:no-repeat ;
+                background-size: cover;
+                overflow: hidden;
+            }
+            #qrcode{
+                
+                width: 500;
+                height: 500;
+                margin-right: 550px;
+                margin-left: 115px;
+                border: 2px solid black;
+            }
+            input{
+                width: 500;
+                height: 30;
+                border-radius: 10px;
+                margin-right: 800px;
+                background-color:transparent;
+                font-size: 20px;
+                text-align:center;
+            }
+            button{
+                width: 500;
+                height: 30;
+                border-radius: 100px;
+                font-size:20px;
+                margin-right: 800px;
+                background-color: transparent;   
+            }
+            #container{
+                margin-top:50px;
+                
+            }
+            #bg{
+                width: 100%;
+                height: 100%;
+            }
+            #times{
+                width: 500px;
+                height: 200px;
+                font-size: 60px;
+                position: relative;
+                left: 1100px;
+                bottom: 670px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                
+                
+            }
+            
+        </style>
+    </head>
+<body>
+    
+    <div id ="container">
+    <input type="text" id="texti">
+    <br>
+    <br>
+    <button id="CreateQR" onclick="CreateQRImage()"><b>Create QR Code</b></button>
+    <br>
+    <br>
+    <button onclick="ClearQRText()"><b>Erase text</b></button>
+    <br>
+    <br>
+    <div id="qrcode"> </div>
+    
+    
+</div>
+<div id="times"> </div>
+<script src="qrcode.js"></script>
+<script src="main.js"></script>
+        
+</body>
+    </html>
